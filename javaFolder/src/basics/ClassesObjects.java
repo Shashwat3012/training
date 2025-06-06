@@ -69,7 +69,7 @@ class Student {
 }
 
 // Main class
-public class Shashwat {
+public class ClassesObjects {
     public static void main(String[] args) {
         Student s1 = new Student("Shashwat", 21);
         Student s2 = new Student("Amit", 21);
