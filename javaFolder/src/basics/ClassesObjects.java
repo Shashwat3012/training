@@ -7,7 +7,7 @@ class Student {
     private int age;
     private double marks;
 
-    private static String university = "Delhi University";
+    private static String university = "Mumbai University";
     private static int totalStudents = 0;
 
     // Default constructor
