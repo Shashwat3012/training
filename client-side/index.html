@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Student Registration</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <h2 class="text-center">Student Registration Form</h2>
+  <form id="registrationForm" class="form-horizontal" novalidate>
+
+    <!-- Name -->
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="name">Full Name:</label>
+      <div class="col-sm-10">
+        <input type="text" id="name" name="name" class="form-control" required pattern="^[a-zA-Z\s]{3,50}$" title="Only alphabets, 3 to 50 characters" placeholder="Enter full name">
+      </div>
+    </div>
+
+    <!-- Age -->
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="age">Age:</label>
+      <div class="col-sm-10">
+        <input type="number" id="age" name="age" class="form-control" required min="17" max="30" placeholder="17–30">
+      </div>
+    </div>
+
+    <!-- Email -->
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="email">Email:</label>
+      <div class="col-sm-10">
+        <input type="email" id="email" name="email" class="form-control" required placeholder="example@domain.com">
+      </div>
+    </div>
+
+    <!-- Phone -->
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="phone">Phone:</label>
+      <div class="col-sm-10">
+        <input type="tel" id="phone" name="phone" class="form-control" required pattern="^[6-9]\d{9}$" title="10-digit Indian mobile number starting with 6-9" placeholder="e.g. 9876543210">
+      </div>
+    </div>
+
+    <!-- College -->
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="college">College:</label>
+      <div class="col-sm-10">
+        <input type="text" id="college" name="college" class="form-control" value="VESIT" readonly>
+      </div>
+    </div>
+
+    <!-- Gender -->
+    <div class="form-group">
+      <label class="control-label col-sm-2">Gender:</label>
+      <div class="col-sm-10">
+        <label class="radio-inline"><input type="radio" name="gender" value="Male" required> Male</label>
+        <label class="radio-inline"><input type="radio" name="gender" value="Female"> Female</label>
+      </div>
+    </div>
+
+    <!-- Submit -->
+    <div class="form-group text-center">
+      <button type="submit" class="btn btn-success">Submit</button>
+    </div>
+
+  </form>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

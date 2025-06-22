@@ -1,0 +1,12 @@
+body {
+    background: #f4f7f8;
+    padding-top: 40px;
+    font-family: "Segoe UI", sans-serif;
+}
+
+.container {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
