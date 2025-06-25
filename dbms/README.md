@@ -1,4 +1,4 @@
-# SQL 
+# SQL Training
 
 ## 1. Need for Database
 
